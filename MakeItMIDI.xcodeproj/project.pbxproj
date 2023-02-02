@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07FCF4FB65CE308998C75F91 /* Pods_MakeItMIDITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD3CCB8D0ABA6DBBE6A0749 /* Pods_MakeItMIDITests.framework */; };
+		31F8770039AD36816C551057 /* Pods_MakeItMIDI_MakeItMIDIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1539A7809DEFAB188B9830C0 /* Pods_MakeItMIDI_MakeItMIDIUITests.framework */; };
+		4EC281BE6E56949DE9D084B9 /* Pods_MakeItMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6F0B16CFAD0699034C8BED /* Pods_MakeItMIDI.framework */; };
+		4F048D51292F0474004FE227 /* onsets_frames_wavinput.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 4F048D50292F0474004FE227 /* onsets_frames_wavinput.tflite */; };
+		4F1336D329591EDB0061332E /* MIDIKitIO in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1336D229591EDB0061332E /* MIDIKitIO */; };
+		4F20AF562961182200D5B63F /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20AF552961182200D5B63F /* Note.swift */; };
+		4F20AF58296A13D000D5B63F /* SignalProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20AF57296A13D000D5B63F /* SignalProcessing.swift */; };
+		4F2DC5CB292EF9F90097E783 /* SoundClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2DC5CA292EF9F90097E783 /* SoundClassifier.swift */; };
 		4F3D1BB32926EDA9003C4512 /* MakeItMIDIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D1BB22926EDA9003C4512 /* MakeItMIDIApp.swift */; };
 		4F3D1BB52926EDA9003C4512 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D1BB42926EDA9003C4512 /* ContentView.swift */; };
 		4F3D1BB72926EDAC003C4512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F3D1BB62926EDAC003C4512 /* Assets.xcassets */; };
@@ -14,6 +22,9 @@
 		4F3D1BC52926EDAC003C4512 /* MakeItMIDITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D1BC42926EDAC003C4512 /* MakeItMIDITests.swift */; };
 		4F3D1BCF2926EDAC003C4512 /* MakeItMIDIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D1BCE2926EDAC003C4512 /* MakeItMIDIUITests.swift */; };
 		4F3D1BD12926EDAC003C4512 /* MakeItMIDIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D1BD02926EDAC003C4512 /* MakeItMIDIUITestsLaunchTests.swift */; };
+		4F3D1BDE2926EE24003C4512 /* AudioInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D1BDD2926EE24003C4512 /* AudioInputManager.swift */; };
+		4F54AFF5298066AE0003030C /* SoundClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2DC5CA292EF9F90097E783 /* SoundClassifier.swift */; };
+		4FC8E0C1295BC0870082B34E /* Matft in Frameworks */ = {isa = PBXBuildFile; productRef = 4FC8E0C0295BC0870082B34E /* Matft */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E9819BBAE975D200A10604E /* Pods-MakeItMIDI-MakeItMIDIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeItMIDI-MakeItMIDIUITests.debug.xcconfig"; path = "Target Support Files/Pods-MakeItMIDI-MakeItMIDIUITests/Pods-MakeItMIDI-MakeItMIDIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1539A7809DEFAB188B9830C0 /* Pods_MakeItMIDI_MakeItMIDIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakeItMIDI_MakeItMIDIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36AF12AFD6582C89BCE799AC /* Pods-MakeItMIDITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeItMIDITests.release.xcconfig"; path = "Target Support Files/Pods-MakeItMIDITests/Pods-MakeItMIDITests.release.xcconfig"; sourceTree = "<group>"; };
+		3AC9C6B5FE3DF06D15396FB4 /* Pods-MakeItMIDI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeItMIDI.debug.xcconfig"; path = "Target Support Files/Pods-MakeItMIDI/Pods-MakeItMIDI.debug.xcconfig"; sourceTree = "<group>"; };
+		4F048D50292F0474004FE227 /* onsets_frames_wavinput.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = onsets_frames_wavinput.tflite; sourceTree = "<group>"; };
+		4F1336D4295922450061332E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4F20AF552961182200D5B63F /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		4F20AF57296A13D000D5B63F /* SignalProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalProcessing.swift; sourceTree = "<group>"; };
+		4F2DC5CA292EF9F90097E783 /* SoundClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundClassifier.swift; sourceTree = "<group>"; };
 		4F3D1BAF2926EDA9003C4512 /* MakeItMIDI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeItMIDI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3D1BB22926EDA9003C4512 /* MakeItMIDIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItMIDIApp.swift; sourceTree = "<group>"; };
 		4F3D1BB42926EDA9003C4512 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +65,12 @@
 		4F3D1BCA2926EDAC003C4512 /* MakeItMIDIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeItMIDIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3D1BCE2926EDAC003C4512 /* MakeItMIDIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItMIDIUITests.swift; sourceTree = "<group>"; };
 		4F3D1BD02926EDAC003C4512 /* MakeItMIDIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItMIDIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F3D1BDD2926EE24003C4512 /* AudioInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioInputManager.swift; sourceTree = "<group>"; };
+		7F6F0B16CFAD0699034C8BED /* Pods_MakeItMIDI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakeItMIDI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8231D0714FC9E2611999BDE7 /* Pods-MakeItMIDI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeItMIDI.release.xcconfig"; path = "Target Support Files/Pods-MakeItMIDI/Pods-MakeItMIDI.release.xcconfig"; sourceTree = "<group>"; };
+		9D44C7FF9378F1A44D23D2A6 /* Pods-MakeItMIDITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeItMIDITests.debug.xcconfig"; path = "Target Support Files/Pods-MakeItMIDITests/Pods-MakeItMIDITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DAD3CCB8D0ABA6DBBE6A0749 /* Pods_MakeItMIDITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakeItMIDITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA5BB6959602C1492BDDE78 /* Pods-MakeItMIDI-MakeItMIDIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeItMIDI-MakeItMIDIUITests.release.xcconfig"; path = "Target Support Files/Pods-MakeItMIDI-MakeItMIDIUITests/Pods-MakeItMIDI-MakeItMIDIUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FC8E0C1295BC0870082B34E /* Matft in Frameworks */,
+				4F1336D329591EDB0061332E /* MIDIKitIO in Frameworks */,
+				4EC281BE6E56949DE9D084B9 /* Pods_MakeItMIDI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07FCF4FB65CE308998C75F91 /* Pods_MakeItMIDITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31F8770039AD36816C551057 /* Pods_MakeItMIDI_MakeItMIDIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +110,8 @@
 				4F3D1BC32926EDAC003C4512 /* MakeItMIDITests */,
 				4F3D1BCD2926EDAC003C4512 /* MakeItMIDIUITests */,
 				4F3D1BB02926EDA9003C4512 /* Products */,
+				EE4D176CC7306332BF990F9C /* Pods */,
+				5512E451982BBC852A78B3B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,11 +128,17 @@
 		4F3D1BB12926EDA9003C4512 /* MakeItMIDI */ = {
 			isa = PBXGroup;
 			children = (
+				4F1336D4295922450061332E /* Info.plist */,
+				4F048D50292F0474004FE227 /* onsets_frames_wavinput.tflite */,
 				4F3D1BB22926EDA9003C4512 /* MakeItMIDIApp.swift */,
 				4F3D1BB42926EDA9003C4512 /* ContentView.swift */,
 				4F3D1BB62926EDAC003C4512 /* Assets.xcassets */,
 				4F3D1BB82926EDAC003C4512 /* MakeItMIDI.entitlements */,
 				4F3D1BB92926EDAC003C4512 /* Preview Content */,
+				4F3D1BDD2926EE24003C4512 /* AudioInputManager.swift */,
+				4F2DC5CA292EF9F90097E783 /* SoundClassifier.swift */,
+				4F20AF552961182200D5B63F /* Note.swift */,
+				4F20AF57296A13D000D5B63F /* SignalProcessing.swift */,
 			);
 			path = MakeItMIDI;
 			sourceTree = "<group>";
@@ -129,6 +168,29 @@
 			path = MakeItMIDIUITests;
 			sourceTree = "<group>";
 		};
+		5512E451982BBC852A78B3B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F6F0B16CFAD0699034C8BED /* Pods_MakeItMIDI.framework */,
+				1539A7809DEFAB188B9830C0 /* Pods_MakeItMIDI_MakeItMIDIUITests.framework */,
+				DAD3CCB8D0ABA6DBBE6A0749 /* Pods_MakeItMIDITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE4D176CC7306332BF990F9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AC9C6B5FE3DF06D15396FB4 /* Pods-MakeItMIDI.debug.xcconfig */,
+				8231D0714FC9E2611999BDE7 /* Pods-MakeItMIDI.release.xcconfig */,
+				0E9819BBAE975D200A10604E /* Pods-MakeItMIDI-MakeItMIDIUITests.debug.xcconfig */,
+				ECA5BB6959602C1492BDDE78 /* Pods-MakeItMIDI-MakeItMIDIUITests.release.xcconfig */,
+				9D44C7FF9378F1A44D23D2A6 /* Pods-MakeItMIDITests.debug.xcconfig */,
+				36AF12AFD6582C89BCE799AC /* Pods-MakeItMIDITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F3D1BD42926EDAC003C4512 /* Build configuration list for PBXNativeTarget "MakeItMIDI" */;
 			buildPhases = (
+				198560882EEA3D126C9DDB15 /* [CP] Check Pods Manifest.lock */,
 				4F3D1BAB2926EDA9003C4512 /* Sources */,
 				4F3D1BAC2926EDA9003C4512 /* Frameworks */,
 				4F3D1BAD2926EDA9003C4512 /* Resources */,
@@ -145,6 +208,10 @@
 			dependencies = (
 			);
 			name = MakeItMIDI;
+			packageProductDependencies = (
+				4F1336D229591EDB0061332E /* MIDIKitIO */,
+				4FC8E0C0295BC0870082B34E /* Matft */,
+			);
 			productName = MakeItMIDI;
 			productReference = 4F3D1BAF2926EDA9003C4512 /* MakeItMIDI.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +220,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F3D1BD72926EDAC003C4512 /* Build configuration list for PBXNativeTarget "MakeItMIDITests" */;
 			buildPhases = (
+				81F507CD27A0A45FCFA42B56 /* [CP] Check Pods Manifest.lock */,
 				4F3D1BBC2926EDAC003C4512 /* Sources */,
 				4F3D1BBD2926EDAC003C4512 /* Frameworks */,
 				4F3D1BBE2926EDAC003C4512 /* Resources */,
@@ -171,6 +239,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F3D1BDA2926EDAC003C4512 /* Build configuration list for PBXNativeTarget "MakeItMIDIUITests" */;
 			buildPhases = (
+				A2061A6A608BABE6585F5781 /* [CP] Check Pods Manifest.lock */,
 				4F3D1BC62926EDAC003C4512 /* Sources */,
 				4F3D1BC72926EDAC003C4512 /* Frameworks */,
 				4F3D1BC82926EDAC003C4512 /* Resources */,
@@ -209,7 +278,7 @@
 				};
 			};
 			buildConfigurationList = 4F3D1BAA2926EDA9003C4512 /* Build configuration list for PBXProject "MakeItMIDI" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -217,6 +286,10 @@
 				Base,
 			);
 			mainGroup = 4F3D1BA62926EDA9003C4512;
+			packageReferences = (
+				4F1336D129591EDB0061332E /* XCRemoteSwiftPackageReference "MIDIKit" */,
+				4FC8E0BF295BC0870082B34E /* XCRemoteSwiftPackageReference "Matft" */,
+			);
 			productRefGroup = 4F3D1BB02926EDA9003C4512 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +308,7 @@
 			files = (
 				4F3D1BBB2926EDAC003C4512 /* Preview Assets.xcassets in Resources */,
 				4F3D1BB72926EDAC003C4512 /* Assets.xcassets in Resources */,
+				4F048D51292F0474004FE227 /* onsets_frames_wavinput.tflite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +328,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		198560882EEA3D126C9DDB15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MakeItMIDI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81F507CD27A0A45FCFA42B56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MakeItMIDITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2061A6A608BABE6585F5781 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MakeItMIDI-MakeItMIDIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F3D1BAB2926EDA9003C4512 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4F3D1BB52926EDA9003C4512 /* ContentView.swift in Sources */,
+				4F20AF58296A13D000D5B63F /* SignalProcessing.swift in Sources */,
 				4F3D1BB32926EDA9003C4512 /* MakeItMIDIApp.swift in Sources */,
+				4F2DC5CB292EF9F90097E783 /* SoundClassifier.swift in Sources */,
+				4F3D1BDE2926EE24003C4512 /* AudioInputManager.swift in Sources */,
+				4F20AF562961182200D5B63F /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F54AFF5298066AE0003030C /* SoundClassifier.swift in Sources */,
 				4F3D1BC52926EDAC003C4512 /* MakeItMIDITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +478,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -349,8 +498,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MakeItMIDI/Shared/UMP-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -388,6 +539,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -401,13 +553,17 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MakeItMIDI/Shared/UMP-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
 		4F3D1BD52926EDAC003C4512 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AC9C6B5FE3DF06D15396FB4 /* Pods-MakeItMIDI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -415,10 +571,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MakeItMIDI/Preview Content\"";
-				DEVELOPMENT_TEAM = WH4JW82SW4;
+				DEVELOPMENT_TEAM = S8T9KP8DYR;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MakeItMIDI/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs to microphone to transcribe audio.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -427,18 +585,20 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.nethery.MakeItMIDI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,6 +606,7 @@
 		};
 		4F3D1BD62926EDAC003C4512 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8231D0714FC9E2611999BDE7 /* Pods-MakeItMIDI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -453,10 +614,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MakeItMIDI/Preview Content\"";
-				DEVELOPMENT_TEAM = WH4JW82SW4;
+				DEVELOPMENT_TEAM = S8T9KP8DYR;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MakeItMIDI/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs to microphone to transcribe audio.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -465,18 +628,20 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.nethery.MakeItMIDI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -484,6 +649,7 @@
 		};
 		4F3D1BD82926EDAC003C4512 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D44C7FF9378F1A44D23D2A6 /* Pods-MakeItMIDITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,6 +673,7 @@
 		};
 		4F3D1BD92926EDAC003C4512 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36AF12AFD6582C89BCE799AC /* Pods-MakeItMIDITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +697,7 @@
 		};
 		4F3D1BDB2926EDAC003C4512 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E9819BBAE975D200A10604E /* Pods-MakeItMIDI-MakeItMIDIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,6 +720,7 @@
 		};
 		4F3D1BDC2926EDAC003C4512 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA5BB6959602C1492BDDE78 /* Pods-MakeItMIDI-MakeItMIDIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -612,6 +781,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F1336D129591EDB0061332E /* XCRemoteSwiftPackageReference "MIDIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/MIDIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.2;
+			};
+		};
+		4FC8E0BF295BC0870082B34E /* XCRemoteSwiftPackageReference "Matft" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jjjkkkjjj/Matft";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F1336D229591EDB0061332E /* MIDIKitIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F1336D129591EDB0061332E /* XCRemoteSwiftPackageReference "MIDIKit" */;
+			productName = MIDIKitIO;
+		};
+		4FC8E0C0295BC0870082B34E /* Matft */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4FC8E0BF295BC0870082B34E /* XCRemoteSwiftPackageReference "Matft" */;
+			productName = Matft;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F3D1BA72926EDA9003C4512 /* Project object */;
 }

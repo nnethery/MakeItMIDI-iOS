@@ -1,0 +1,27 @@
+PODS:
+  - TensorFlowLiteC (2.10.0):
+    - TensorFlowLiteC/Core (= 2.10.0)
+  - TensorFlowLiteC/Core (2.10.0)
+  - TensorFlowLiteC/CoreML (2.10.0):
+    - TensorFlowLiteC/Core
+  - TensorFlowLiteSwift/Core (2.10.0):
+    - TensorFlowLiteC (= 2.10.0)
+  - TensorFlowLiteSwift/CoreML (2.10.0):
+    - TensorFlowLiteC/CoreML (= 2.10.0)
+    - TensorFlowLiteSwift/Core (= 2.10.0)
+
+DEPENDENCIES:
+  - TensorFlowLiteSwift/CoreML
+
+SPEC REPOS:
+  trunk:
+    - TensorFlowLiteC
+    - TensorFlowLiteSwift
+
+SPEC CHECKSUMS:
+  TensorFlowLiteC: edf19548f50a1552e43dbd6906f5618a478bd038
+  TensorFlowLiteSwift: fc26e0e9d63c8a98ff61187457635e660d787561
+
+PODFILE CHECKSUM: a41b24c644d14ef9317748968f5dec2080a4d6a6
+
+COCOAPODS: 1.11.3
